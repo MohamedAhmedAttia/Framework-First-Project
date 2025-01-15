@@ -1,0 +1,39 @@
+.body{
+    height: 80vh;
+}
+h1, i{
+    color: #2C3E50;
+}
+h1{
+    font-size: 40px;
+}
+.star-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-container::before,
+  .star-container::after {
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: #2C3E50;
+  }
+  
+  .star-container::before {
+    margin-right: 10px;
+  }
+  
+  .star-container::after {
+    margin-left: 10px;
+  }
+  button{
+    color: white;
+    background-color: #1ABC9C;
+  }
+  .my-label{
+    bottom: 40px;
+    color: #1ABC9C;;
+  }
+  

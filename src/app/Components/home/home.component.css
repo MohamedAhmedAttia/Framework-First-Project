@@ -1,0 +1,31 @@
+*{
+    background-color:  #1ABC9C;
+}
+img{
+    width: 18%;
+    margin-top: 200px;
+}
+.star-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-container::before,
+  .star-container::after {
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: white;
+  }
+  
+  .star-container::before {
+    margin-right: 10px;
+  }
+  
+  .star-container::after {
+    margin-left: 10px;
+  }
+.body{
+  height: 80vh;
+}

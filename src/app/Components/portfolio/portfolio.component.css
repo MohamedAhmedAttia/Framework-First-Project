@@ -1,0 +1,61 @@
+
+h1, i{
+    color: #2C3E50;
+}
+h1{
+    font-size: 40px;
+}
+.plus{
+    font-size: 100px;
+    color: white;
+}
+.star-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-container::before,
+  .star-container::after {
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: #2C3E50;
+  }
+  
+  .star-container::before {
+    margin-right: 10px;
+  }
+  
+  .star-container::after {
+    margin-left: 10px;
+  }
+  .layer{
+    background-color:  #1ABC9C;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .layer:hover{
+    opacity: 0.9;
+  }
+  .lightbox-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(194, 219, 254, 0.5)
+  }
+  .lightbox-item{
+        width: 40%;
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+  }
+  .lightbox-item img{
+    width: 100%;
+  }
+  
+  

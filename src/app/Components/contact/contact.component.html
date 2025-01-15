@@ -1,0 +1,33 @@
+<div class=" body">
+    <div class="d-flex justify-content-center align-items-center mt-3">
+        <h1 class="fw-bold">CONTACT CENTER</h1>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-3 star-container">
+        <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="mt-5">
+        
+            <div class="mb-3 w-50 m-auto mt-4 position-relative">
+              <label [class.d-none]="!userName" for="userName" class="form-label position-absolute my-label">User Name</label>
+              <input type="text" class="form-control " id="userName" placeholder="User Name" [(ngModel)]="userName">
+              </div>
+              <div class="mb-3 w-50 m-auto mt-5 position-relative">
+                <label [class.d-none]="!userAge" for="userAge" class="form-label position-absolute my-label">User Age</label>
+                <input type="number" class="form-control" id="userAge" placeholder="User Age" [(ngModel)]="userAge">
+              </div>
+              <div class="mb-3 w-50 m-auto mt-5 position-relative">
+                <label [class.d-none]="!userEmail" for="userEmail" class="form-label position-absolute my-label">User Email</label>
+                <input type="email" class="form-control" id="userEmail" placeholder="User Email" [(ngModel)]="userEmail">
+              </div>
+              <div class="mb-3 w-50 m-auto mt-5 position-relative">
+                <label [class.d-none]="!userPassowrd" for="userPassword" class="form-label position-absolute my-label">User Password</label>
+                <input type="password" class="form-control" id="userPassword" placeholder="User Password" [(ngModel)]="userPassowrd">
+              </div>
+        
+              <div class="text-center">
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+          
+    </div>
+</div>

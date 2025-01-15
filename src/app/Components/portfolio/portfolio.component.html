@@ -1,0 +1,86 @@
+<div>
+    <div class="d-flex justify-content-center align-items-center mt-3">
+        <h1 class="fw-bold text-center">PORTFOLIO COMPONENT</h1>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-3 star-container">
+        <i class="fa-solid fa-star"></i>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="position-relative item">
+                    <div class="rounded-3">
+                        <img class="img-fluid rounded-3" src="portfolio_one.png" alt="portfolio">
+                        <div (click)="showPic('portfolio_one.png')" class="position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center layer rounded-3" >
+                            <i class="fa-solid fa-plus plus"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="position-relative item">
+                    <div class="rounded-3">
+                        <img class="img-fluid rounded-3" src="portfolio_two.png" alt="portfolio">
+                        <div (click)="showPic('portfolio_two.png')" class="position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center layer rounded-3">
+                            <i class="fa-solid fa-plus plus"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="position-relative item">
+                    <div class="rounded-3">
+                        <img class="img-fluid rounded-3" src="portfolio_three.png" alt="portfolio">
+                    </div>
+                    <div (click)="showPic('portfolio_three.png')" class="position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center layer rounded-3">
+                        <i class="fa-solid fa-plus plus"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="position-relative item">
+                    <div class="rounded-3">
+                        <img class="img-fluid rounded-3" src="portfolio_one.png" alt="portfolio">
+                    </div>
+                    <div (click)="showPic('portfolio_one.png')" class="position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center layer rounded-3">
+                        <i class="fa-solid fa-plus plus"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="position-relative item">
+                    <div class="rounded-3">
+                        <img class="img-fluid rounded-3" src="portfolio_two.png" alt="portfolio">
+                    </div>
+                    <div (click)="showPic('portfolio_two.png')" class="position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center layer rounded-3">
+                        <i class="fa-solid fa-plus plus"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="position-relative item">
+                    <div class="rounded-3">
+                        <img class="img-fluid rounded-3" src="portfolio_three.png" alt="portfolio">
+                    </div>
+                    <div (click)="showPic('portfolio_three.png')" class="position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center layer rounded-3">
+                        <i class="fa-solid fa-plus plus" ></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox-container" class="lightbox-container d-none justify-content-center align-items-center">
+        <div id="lightbox-item" class="lightbox-item d-flex justify-content-between align-items-center position-relative fs-3 text-success">
+            <img class="m-auto" [src]="lightboxImageSrc" alt="clickedpic">
+        </div>
+    </div>
